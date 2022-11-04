@@ -1,0 +1,35 @@
+
+
+
+GET  http://localhost:3000/pots
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamFjayIsImlhdCI6MTY2NzU2NjUwNH0.W9TP49-YiLpzNYWBAjhr4szdBskOsiTQ63FjFBsYSTM
+###
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+
+"name":"jack"
+
+}
+###
+
+
+POST http://localhost:3000/token
+Content-Type: application/json
+
+{
+
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamFjayIsImlhdCI6MTY2NzU2NjU3N30.cvpgWr-WGJj6phxfNiOd_ONa5wG25LQ40ThAFUb70QY"
+}
+###
+
+
+DELETE  http://localhost:3000/logout
+Content-Type: application/json
+
+{
+
+"token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiamFjayIsImlhdCI6MTY2NzU2NjU3N30.cvpgWr-WGJj6phxfNiOd_ONa5wG25LQ40ThAFUb70QY"
+
+}
